@@ -18,7 +18,7 @@ Example:
 
     }
 
-    public static void methodName() {
+    public static void methodName() { //Void means **do not send any data back, no return**
         System.out.println("Testing");
     }
 
@@ -36,3 +36,9 @@ Example:
        int seconds = (((hours * 60) * 60) + (minutes * 60)); // Converts hours to minutes, to seconds, and adds the minutes to seconds conversion
         System.out.println("There are " + seconds + " in " + hours + " and " + minutes + " minutes."); // Prints out the result
     }
+***
+Important Information:
+**void** instructs the method not to return any data, this is useful for printing 
+**to return data**: return is used to return data to the main class, doing this requires the method to be structured as follows:
+public static int methodName() // This states that the method is returning an integer value
+
