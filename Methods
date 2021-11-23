@@ -1,0 +1,28 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        calculateScore(true, 800, 5, 100);
+        //run the calculateScore method with a value of true, score of 800, levelCompleted of 5, and bonus of 100
+        calculateScore(true, 10000, 5, 100);
+        //run the calculateScore method with a value of true, score of 10000, levelCompleted of 5, and bonus of 100
+
+
+    }
+
+    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+        //void means it prints a value
+        /* Set variables in the method to pass values into the method.
+        Line 7 and 8 show how you can pass values into a method (must contain the same variable types)
+        The program will run the "calculateScore" method and input the listed values into the calculateScore method.
+         */
+        if(gameOver) { // if gameOver == true, calculate the finalScore variable by adding score to (levelCompleted * bonus)
+            int finalScore = score + (levelCompleted * bonus);
+            finalScore += 1000; //add 1000 to the final score
+            System.out.println("Your final score was " + finalScore); //print the finalscore
+        }
+
+    }
+}
